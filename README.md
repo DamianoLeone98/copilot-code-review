@@ -42,6 +42,8 @@ If the exercise isn't ready in 20 seconds, please check the [Actions](../../acti
 
 - Check to see if a job is running. Sometimes it simply takes a bit longer.
 
+- If **Step 1** fails with `No exercise issue found`, check whether **Step 0** has run successfully. Initialization runs on a push to the repository's default branch, which does not have to be named `main`. If the exercise issue is missing, select **Step 0** in the Actions tab and use **Run workflow** on the default branch. Wait for it to finish, then re-run the failed **Step 1** jobs. Only run **Step 0** manually when the exercise issue is missing, since it creates a new issue and resets exercise progress.
+
 - If the page shows a failed job, please submit an issue. Nice, you found a bug! 🐛
 
 </details>
